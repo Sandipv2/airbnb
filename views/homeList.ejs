@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/output.css">
+</head>
+
+<body class="bg-amber-600">
+    <h1 class="text-center text-3xl py-5 underline text-black">Available Homes:</h1>
+    <div class="container bg-amber-200 px-10 py-7">
+        <ul class="list-decimal">
+            <% homes.forEach((home)=> {%>
+                <li><%=home.homeName %></li>
+            <%})%>
+        </ul>
+        <br>
+        <a href='/' class="underline">Goto Home</a>
+    </div>
+</body>
+
+</html>
